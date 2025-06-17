@@ -19,29 +19,29 @@ Doutor em Ciência Política, Universidade Federal de Minas Gerais (UFMG). Ciên
 
 Instale a versão de desenvolvimento diretamente do GitHub com:
 
-# Instale o pacote devtools caso ainda não tenha
+## Instale o pacote devtools caso ainda não tenha
 
 install.packages("devtools")
 
-# Instale o almgR da sua conta GitHub
+## Instale o almgR da sua conta GitHub
 
 devtools::install_github("vsntos/almgR")
 
 ## Exemplo básico de uso
 
-# Coletar pronunciamentos entre 1º de janeiro e 31 de dezembro de 2024
+## Coletar pronunciamentos entre 1º de janeiro e 31 de dezembro de 2024
 
 pronunciamentos \<- coletar_pronunciamentos_intervalo("20240101", "20241231")
 
-# Visualizar os primeiros registros
+## Visualizar os primeiros registros
 
 head(pronunciamentos)
 
-# Buscar deputados em exercício
+## Buscar deputados em exercício
 
 deputados \<- get_deputados_em_exercicio()
 
-# Visualizar estrutura dos dados
+## Visualizar estrutura dos dados
 
 glimpse(deputados)
 
