@@ -29,17 +29,17 @@ devtools::install_github("vsntos/almgR")
 
 ## Exemplo básico de uso
 
-## Coletar pronunciamentos entre 1º de janeiro e 31 de dezembro de 2024
+Coletar pronunciamentos entre 1º de janeiro e 31 de dezembro de 2024
 
-pronunciamentos \<- coletar_pronunciamentos_intervalo("20240101", "20241231")
+pronunciamentos <- coletar_pronunciamentos_intervalo("20240101", "20241231")
 
 ## Visualizar os primeiros registros
 
 head(pronunciamentos)
 
-## Buscar deputados em exercício
+Buscar deputados em exercício
 
-deputados \<- get_deputados_em_exercicio()
+deputados <- get_deputados_em_exercicio()
 
 ## Visualizar estrutura dos dados
 
