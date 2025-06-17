@@ -22,4 +22,5 @@ Imports:
     dplyr,
     xml2
 Depends: R (>= 3.5.0)
-
+URL: https://github.com/vsntos/almgR
+BugReports: https://github.com/vsntos/almgR/issues
