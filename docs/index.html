@@ -62,41 +62,66 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-
-<p>almgR <!-- badges: start --> <!-- badges: end --> O pacote almgR fornece funções para coletar e manipular dados abertos da Assembleia Legislativa de Minas Gerais (ALMG) via sua API REST pública.</p>
-<p>Com o almgR você pode:</p>
-<p>Buscar pronunciamentos, deputados, comissões, proposições e outros dados legislativos.</p>
-<p>Trabalhar com paginação e tratamentos automáticos de erros.</p>
-<p>Salvar e organizar dados para análises em R.</p>
-<p>Automatizar rotinas periódicas de coleta.</p>
-<p>Instalação Instale a versão de desenvolvimento diretamente do GitHub com:</p>
-<p>r Copiar # Instale o pacote devtools caso não tenha install.packages(“devtools”)</p>
 <div class="section level1">
-<div class="page-header"><h1 id="instale-almgr-da-sua-conta-github">Instale almgR da sua conta GitHub<a class="anchor" aria-label="anchor" href="#instale-almgr-da-sua-conta-github"></a>
+<div class="page-header"><h1 id="almgr-">almgR <img src="inst/figures/img.png" align="right" width="150"><a class="anchor" aria-label="anchor" href="#almgr-"></a>
 </h1></div>
-<p>devtools::install_github(“seu_usuario/almgR”) Exemplo básico r Copiar library(almgR)</p>
+<div class="float">
+<img src="https://img.shields.io/badge/license-MIT-blueviolet.svg?style=flat" alt="License"><div class="figcaption">License</div>
 </div>
-<div class="section level1">
-<h1 id="coletar-pronunciamentos-de-um-intervalo-de-datas">Coletar pronunciamentos de um intervalo de datas<a class="anchor" aria-label="anchor" href="#coletar-pronunciamentos-de-um-intervalo-de-datas"></a>
-</h1>
-<p>pronunciamentos &lt;- coletar_pronunciamentos_intervalo(“20240101”, “20241231”)</p>
+<p>Vinicius Santos <a href="http://vsantos.rbind.io/" class="external-link uri">http://vsantos.rbind.io/</a></p>
+<p>Doutor em Ciência Política, Universidade Federal de Minas Gerais (UFMG)</p>
+<p><strong>almgR</strong> é um pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG) via sua API REST pública.</p>
+<div class="section level2">
+<h2 id="funcionalidades-principais">Funcionalidades principais<a class="anchor" aria-label="anchor" href="#funcionalidades-principais"></a>
+</h2>
+<ul>
+<li>Coleta de dados legislativos: pronunciamentos, deputados, comissões, proposições e mais.</li>
+<li>Tratamento automático de paginação e erros de API.</li>
+<li>Estruturação e organização dos dados para análise.</li>
+<li>Automatização de rotinas periódicas de coleta e atualização.</li>
+</ul>
 </div>
-<div class="section level1">
-<h1 id="visualizar-os-primeiros-registros">Visualizar os primeiros registros<a class="anchor" aria-label="anchor" href="#visualizar-os-primeiros-registros"></a>
-</h1>
-<p>head(pronunciamentos)</p>
+<div class="section level2">
+<h2 id="instalação">Instalação<a class="anchor" aria-label="anchor" href="#instala%C3%A7%C3%A3o"></a>
+</h2>
+<p>Instale a versão de desenvolvimento diretamente do GitHub com:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Instale o pacote devtools caso ainda não tenha</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Instale o almgR da sua conta GitHub</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"vsntos/almgR"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div class="section level1">
-<h1 id="buscar-deputados-em-exercício">Buscar deputados em exercício<a class="anchor" aria-label="anchor" href="#buscar-deputados-em-exerc%C3%ADcio"></a>
-</h1>
-<p>deputados &lt;- get_deputados_em_exercicio()</p>
+<div class="section level2">
+<h2 id="exemplo-básico-de-uso">Exemplo básico de uso<a class="anchor" aria-label="anchor" href="#exemplo-b%C3%A1sico-de-uso"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span></span>
+<span><span class="co"># Coletar pronunciamentos entre 1º de janeiro e 31 de dezembro de 2024</span></span>
+<span><span class="va">pronunciamentos</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/coletar_pronunciamentos_intervalo.html">coletar_pronunciamentos_intervalo</a></span><span class="op">(</span><span class="st">"20240101"</span>, <span class="st">"20241231"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Visualizar os primeiros registros</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">pronunciamentos</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Buscar deputados em exercício</span></span>
+<span><span class="va">deputados</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_deputados_em_exercicio.html">get_deputados_em_exercicio</a></span><span class="op">(</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Visualizar estrutura dos dados</span></span>
+<span><span class="fu">glimpse</span><span class="op">(</span><span class="va">deputados</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div class="section level1">
-<h1 id="visualizar-estrutura-dos-dados">Visualizar estrutura dos dados<a class="anchor" aria-label="anchor" href="#visualizar-estrutura-dos-dados"></a>
-</h1>
-<p>glimpse(deputados)</p>
+<div class="section level2">
+<h2 id="Contribuição">
+<a href="#Contribui%C3%A7%C3%A3o">Contribuição</a><a class="anchor" aria-label="anchor" href="#Contribui%C3%A7%C3%A3o"></a>
+</h2>
+<p>Contribuições são bem-vindas! Abra issues e pull requests no repositório almgR.</p>
 </div>
-
+<div class="section level2">
+<h2 id="Citação">
+<a href="#Cita%C3%A7%C3%A3o">Citação</a><a class="anchor" aria-label="anchor" href="#Cita%C3%A7%C3%A3o"></a>
+</h2>
+<p>Santos, Vinicius (2025). <strong>almgR</strong>: pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG). R package. <a href="https://github.com/vsntos/almgR" class="external-link uri">https://github.com/vsntos/almgR</a></p>
+</div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
