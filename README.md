@@ -1,70 +1,56 @@
----
-output: github_document
----
 
-\# almgR \<img src="inst/figures/img.png" align="right" width="150"/\>
-
-![License]([https://img.shields.io/badge/license-MIT-blueviolet.svg?style=flat)](https://img.shields.io/badge/license-MIT-blueviolet.svg?style=flat))
-
-Vinicius Santos <http://vsantos.rbind.io/>
+Vinicius Santos vsntos.github.io/almgR/
 
 Doutor em Ciência Política, Universidade Federal de Minas Gerais (UFMG). Ciêntista de Dados e Cientista de Redes.
 
-\*\*almgR\*\* é um pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG) via sua API REST pública.
+*almgR** é um pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG) via sua API REST pública.
 
-\## Funcionalidades principais
+## Funcionalidades principais
 
-\- Coleta de dados legislativos: pronunciamentos, deputados, comissões, proposições e mais.
+- Coleta de dados legislativos: pronunciamentos, deputados, comissões, proposições e mais.
 
-\- Tratamento automático de paginação e erros de API.
+- Tratamento automático de paginação e erros de API.
 
-\- Estruturação e organização dos dados para análise.
+- Estruturação e organização dos dados para análise.
 
-\- Automatização de rotinas periódicas de coleta e atualização.
+- Automatização de rotinas periódicas de coleta e atualização.
 
-\## Instalação
+## Instalação
 
 Instale a versão de desenvolvimento diretamente do GitHub com:
 
-\`\`\` r
-
-\# Instale o pacote devtools caso ainda não tenha
+# Instale o pacote devtools caso ainda não tenha
 
 install.packages("devtools")
 
-\# Instale o almgR da sua conta GitHub
+# Instale o almgR da sua conta GitHub
 
 devtools::install_github("vsntos/almgR")
 
-\`\`\`
+## Exemplo básico de uso
 
-\## Exemplo básico de uso
-
-\`\`\` r
-
-\# Coletar pronunciamentos entre 1º de janeiro e 31 de dezembro de 2024
+# Coletar pronunciamentos entre 1º de janeiro e 31 de dezembro de 2024
 
 pronunciamentos \<- coletar_pronunciamentos_intervalo("20240101", "20241231")
 
-\# Visualizar os primeiros registros
+# Visualizar os primeiros registros
 
 head(pronunciamentos)
 
-\# Buscar deputados em exercício
+# Buscar deputados em exercício
 
 deputados \<- get_deputados_em_exercicio()
 
-\# Visualizar estrutura dos dados
+# Visualizar estrutura dos dados
 
 glimpse(deputados)
 
-\`\`\`
 
-\## [Contribuição](#Contribuição) {#Contribuição}
+## [Contribuição](#Contribuição) {#Contribuição}
 
 Contribuições são bem-vindas! Abra issues e pull requests no repositório almgR.
 
-\## [Citação](#Citação) {#Citação}
+## [Citação](#Citação) {#Citação}
 
 Santos, Vinicius (2025). \*\*almgR\*\*: pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG). R package. <https://github.com/vsntos/almgR>
 
