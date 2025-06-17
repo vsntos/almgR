@@ -1,5 +1,5 @@
 
-Vinicius Santos <vsntos.github.io/almgR>
+Vinicius Santos <vsntos.github.io/almgR/>
 
 Doutor em Ciência Política, Universidade Federal de Minas Gerais (UFMG). Ciêntista de Dados e Cientista de Redes.
 
