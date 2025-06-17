@@ -1,9 +1,9 @@
 
-Vinicius Santos <vsntos.github.io/almgR/>
+Vinicius Santos <vsntos.github.io/almgR>
 
 Doutor em Ciência Política, Universidade Federal de Minas Gerais (UFMG). Ciêntista de Dados e Cientista de Redes.
 
-*almgR** é um pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG) via sua API REST pública.
+*almgR* é um pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG) via sua API REST pública.
 
 ## Funcionalidades principais
 
@@ -52,5 +52,5 @@ Contribuições são bem-vindas! Abra issues e pull requests no repositório alm
 
 ## [Citação](#Citação) {#Citação}
 
-Santos, Vinicius (2025). \*\*almgR\*\*: pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG). R package. <https://github.com/vsntos/almgR>
+Santos, Vinicius (2025). *almgR*: pacote R para coletar dados abertos da Assembleia Legislativa de Minas Gerais (ALMG). R package. <https://github.com/vsntos/almgR>
 
