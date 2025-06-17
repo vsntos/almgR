@@ -1,0 +1,25 @@
+Package: almgR
+Type: Package
+Title: Coleção de Funções para Coleta de Dados da ALMG
+Version: 0.1.0
+Authors@R: person("Vinicius", "Santos", email = "santos.vinicius18@gmail.com", role = c("aut", "cre"))
+Description: Pacote para coleta e análise de dados da Assembleia Legislativa de Minas Gerais (ALMG) via API pública.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    dplyr,
+    glue,
+    httr,
+    jsonlite,
+    lubridate,
+    magrittr,
+    purrr,
+    tibble,
+    tidyr,
+    dplyr,
+    xml2
+Depends: R (>= 3.5.0)
+
