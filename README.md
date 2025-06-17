@@ -41,7 +41,7 @@ head(pronunciamentos)
 
 deputados <- get_deputados_em_exercicio()
 
-## Visualizar estrutura dos dados
+Visualizar estrutura dos dados
 
 glimpse(deputados)
 
